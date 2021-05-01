@@ -1,0 +1,68 @@
+online compiler links:
+source code is copied to below link.
+
+-Share Code:	
+https://onlinegdb.com/S1XWzEovO
+
+-Embed Code:	
+<script src="//onlinegdb.com/embed/js/S1XWzEovO?theme=dark"></script>
+
+
+**********************************************************************
+
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	     
+	 Scanner input=new Scanner(System.in);
+		
+		int x,c,gcd,swap,biger_num;
+		
+		System.out.println("enter two  positive intger number greater than 0");
+		
+		System.out.println("first num  =======:");
+		x=input.nextInt();
+		
+		System.out.println("second num =======:");
+		c=input.nextInt();
+		
+		 if(c>=x)
+     {
+         swap=x;
+         x=c;
+         c=swap;
+     }
+     
+     biger_num=x;
+	 System.out.println("biger_num ----->"+biger_num);
+	 
+	  while(x!=0){
+          x=x%c;
+          
+          if(x==0)
+          break;
+          
+          else
+            
+         if(c>=x)
+       {
+         swap=x;
+         x=c;
+         c=swap;
+       }
+      }
+      System.out.println("gcd       ----->"+c);
+      
+      if((biger_num/c) % 2 == 0)
+      System.out.println("*^* i will choose to move second to win .");
+      else
+      System.out.println("*^* i will choose to move first to win .");
+		
+		
+		
+		
+	}
+}
